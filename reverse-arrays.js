@@ -1,9 +1,9 @@
 function reverseArray(arr) {
-  // Add code.
+ '1','2','3','4'
 }
 
 function reverseArrayInPlace(arr) {
-  // Add code.
+ '1','2','3','4'
 }
 
 
