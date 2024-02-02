@@ -14,13 +14,8 @@ function reverseArrayInPlace(inputArray) {
         outputArray.push(inputArray[i]);
     }
     return outputArray;
-
 }
-
-
-let arrayValue = [];
-reverseArrayInPlace(arrayValue);
-console.log(arrayValue([1, 2, 3, 4, 5,]));
+console.log(reverseArrayInPlace([1, 2, 3, 4, 5,]));
 
 // → ["C", "B", "A"];
 
