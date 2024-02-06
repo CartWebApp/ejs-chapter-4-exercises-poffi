@@ -1,9 +1,14 @@
 function arrayToList(arr) {
-  // Add code.
+  let arrayToList = []
+  for(let i = inputArray.length - 1; i >= 0 ; i--){
+      arrayToList.push(inputArray[i]);
+  }
+  return arrayToList;
 }
 
 function listToArray(list, arr) {
-  // Add code.
+  for(let i = inputArray.length - 1; i >= 0 ; i--);
+  return listToArray
 }
 
 // tests

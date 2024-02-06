@@ -1,5 +1,11 @@
 function deepEqual(value, reference) {
-  // Add code.
+  let outputArray = []
+    for(let i = inputArray.length - 1; i >= 0 ; i--){
+        outputArray.push(inputArray[i]);
+    }
+    return true
+    
+
 }
 
 
