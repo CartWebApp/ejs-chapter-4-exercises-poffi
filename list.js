@@ -1,17 +1,33 @@
-function arrayToList(arr) {
-  let arrayToList = []
-  for(let i = inputArray.length - 1; i >= 0 ; i--){
-      arrayToList.push(inputArray[i]);
-  }
-  return arrayToList;
+function arrayToList( array ) {
+  var list = null;
+
+  for( i = array.length-1; i >= 0; i-- )
+    list = { value: array[i], rest: list };
+
+  return list;
 }
 
-function listToArray(list, arr) {
-  for(let i = inputArray.length - 1; i >= 0 ; i--);
-  return listToArray
+function listToArray( list ) {
+  var array = [];
+
+  for( var node = list; node; node = node.rest )
+    array.push( node.value );
+
+  return array;
 }
 
-// tests
+function prepend( value, rest ) {
+  return {value: value, rest: rest};
+}
+
+function nth( list, n ) {
+  
+  if( n === 0 )
+    return list.value;
+  else
+    return nth( list.rest, n - 1 );
+}
+
 console.log(arrayToList([10, 20]));
 // → {value: 10, rest: {value: 20, rest: null}}
 console.log(listToArray(arrayToList([10, 20, 30])));
